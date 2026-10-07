@@ -1,0 +1,499 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #0d0c22;
+}
+
+a {
+    color: #5e5d6b;
+}
+
+
+/* =================================
+   MAIN
+================================= */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =================================
+   ILUSTRASI (GAMBAR)
+================================= */
+
+.visual-section {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #1a0b3b;
+    color: #ffffff;
+}
+
+.brand-mark {
+    display: none;
+}
+
+.artwork {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 220px;
+    height: 220px;
+    top: -60px;
+    right: -50px;
+    background-color: #c45cff;
+    opacity: 0.6;
+}
+
+.circle-two {
+    width: 260px;
+    height: 260px;
+    bottom: -120px;
+    left: -80px;
+    background-color: #ff4fa8;
+    opacity: 0.6;
+}
+
+.square {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 30px;
+    left: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 14px;
+    transform: rotate(18deg);
+}
+
+.main-shape {
+    position: absolute;
+    width: 110px;
+    height: 130px;
+    top: 35px;
+    right: 90px;
+    padding: 16px 14px;
+    border-radius: 20px;
+    background-color: #3d5bff;
+}
+
+.shape-line {
+    height: 8px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.line-two {
+    width: 70%;
+}
+
+.line-three {
+    width: 45%;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+    display: flex;
+    gap: 6px;
+    padding: 10px 14px;
+    border-radius: 30px;
+    background-color: #5b3f8c;
+}
+
+.mini-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffd36b;
+}
+
+
+/* =================================
+   TEKS DI ILUSTRASI
+================================= */
+
+.visual-text {
+    display: none;
+}
+
+.page-number {
+    display: none;
+}
+
+
+/* =================================
+   BAGIAN FORM
+================================= */
+
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+    background-color: #ffffff;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 390px;
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.brand-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ea64d9;
+    border-radius: 50%;
+    font-size: 16px;
+    font-style: normal;
+    color: #0d0c22;
+}
+
+
+/* =================================
+   JUDUL FORM
+================================= */
+
+.form-heading {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.welcome {
+    margin-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #5e5d6b;
+}
+
+.form-heading h1 {
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+.description {
+    font-size: 14px;
+    color: #5e5d6b;
+}
+
+
+/* =================================
+   TOMBOL GOOGLE
+================================= */
+
+.google-button {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #c9c9d2;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #0d0c22;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.google-button:hover {
+    background-color: #f2f2f5;
+}
+
+.google-icon {
+    color: #4285f4;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* =================================
+   DIVIDER
+================================= */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #d0d0d8;
+}
+
+.divider p {
+    font-size: 14px;
+    color: #5e5d6b;
+}
+
+
+/* =================================
+   INPUT
+================================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 100%;
+    height: 54px;
+    padding: 0 16px;
+    border: 1px solid #8e8e99;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #0d0c22;
+    font-size: 15px;
+}
+
+.input-group input::placeholder {
+    color: #6b6a78;
+}
+
+.input-group input:focus {
+    border-color: #0d0c22;
+    outline: 3px solid #9bb0ff;
+}
+
+
+/* =================================
+   PASSWORD
+================================= */
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-link {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   REMEMBER ME
+================================= */
+
+.remember-row {
+    margin-bottom: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    width: 18px;
+    height: 18px;
+}
+
+.custom-checkbox {
+    display: none;
+}
+
+
+/* =================================
+   TOMBOL SIGN IN
+================================= */
+
+.signin-button {
+    width: 100%;
+    height: 58px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0d0c22;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #2a2850;
+}
+
+
+/* =================================
+   SIGN UP
+================================= */
+
+.signup-text {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #5e5d6b;
+}
+
+
+/* =================================
+   TABLET (768px ke atas)
+================================= */
+
+@media screen and (min-width: 768px) {
+
+    .visual-section {
+        height: 240px;
+    }
+
+    .form-section {
+        padding: 50px;
+    }
+
+}
+
+
+/* =================================
+   DESKTOP (1024px ke atas)
+   Form di kiri, ilustrasi di kanan
+================================= */
+
+@media screen and (min-width: 1024px) {
+
+    .login-page {
+        flex-direction: row-reverse;
+    }
+
+    .visual-section {
+        width: 26%;
+        height: 100vh;
+    }
+
+    .form-section {
+        width: 74%;
+        height: 100vh;
+    }
+
+    .visual-text {
+        display: block;
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        bottom: 70px;
+    }
+
+    .small-title {
+        margin-bottom: 8px;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .visual-text h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .page-number {
+        display: block;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        font-size: 13px;
+    }
+
+    .main-shape {
+        width: 150px;
+        height: 180px;
+        top: 90px;
+        right: 60px;
+    }
+
+    .square {
+        width: 90px;
+        height: 90px;
+        top: 50px;
+        left: 40px;
+    }
+
+    .floating-card {
+        bottom: 250px;
+        left: 70px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE (di bawah 768px)
+   Ilustrasi disembunyikan
+================================= */
+
+@media screen and (max-width: 767px) {
+
+    .visual-section {
+        display: none;
+    }
+
+    .form-heading h1 {
+        font-size: 30px;
+    }
+
+}
